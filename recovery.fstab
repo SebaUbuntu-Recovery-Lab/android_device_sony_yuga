@@ -1,0 +1,11 @@
+# mount point       fstype    device                                                                flags
+/boot               emmc      /dev/block/platform/msm_sdcc.1/by-name/boot                           flags=display="Boot";backup=1;flashimg=1;
+/recovery           emmc      /dev/block/platform/msm_sdcc.1/by-name/FOTAKernel                     flags=display="Recovery";backup=1;flashimg=1;
+/cache              ext4      /dev/block/platform/msm_sdcc.1/by-name/cache                          flags=display="Cache";
+/system             ext4      /dev/block/platform/msm_sdcc.1/by-name/system                         flags=display="System";backup=1;
+/system_image       emmc      /dev/block/platform/msm_sdcc.1/by-name/system                         flags=display="System image";backup=1;flashimg=1;
+/data               ext4      /dev/block/platform/msm_sdcc.1/by-name/userdata                       flags=display="Data";
+/ta                 emmc      /dev/block/platform/msm_sdcc.1/by-name/TA                             flags=display="Ta";
+/misc               emmc      /dev/block/platform/msm_sdcc.1/by-name/apps_log                       flags=display="Misc";backup=1;flashimg=1;
+/external_sd        vfat      /dev/block/mmcblk1p1                                                  flags=display="External_sd";
+/usb-otg            auto      /dev/block/sda1                                                       flags=display="Usb-otg";
